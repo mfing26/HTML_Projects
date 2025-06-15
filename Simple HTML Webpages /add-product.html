@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Product Form</title>
+    <link rel="stylesheet" href="css/style-add-product.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">Globelle.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3" href="">Skincare</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3" href="">Bath & Body</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3" href="">Haircare</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3" href="">Accessories</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href=""><i class="fas fa-shopping-cart"></i> View My Cart</a>
+                    </li>
+                </ul>
+                <div class="ms-auto d-flex align-items-center">
+                    <form class="d-flex me-2">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                    <a href="" class="nav-link d-none d-lg-block">
+                        <i class="fas fa-shopping-cart" style="padding-left: 10px; padding-right: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container mt-4">
+        <div class="row justify-content-center">
+                <h2>Add New Product Form</h2>
+                <form class="form-with-margin" id="productForm">
+                    <div class="mb-3">
+                        <label for="productName" class="form-label">Product Name:</label>
+                        <input type="text" class="form-control" id="productName" name="productName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dropdownQuestion" class="form-label">Product Category</label>
+                        <select class="form-select" id="dropdownQuestion" name="dropdownQuestion" required>
+                            <option value="">Choose...</option>
+                            <option value="skincare">Skincare</option>
+                            <option value="bath-body">Bath & Body</option>
+                            <option value="haircare">Haircare</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="productDescription" class="form-label">Product Description:</label>
+                        <textarea class="form-control" id="productDescription" name="productDescription" rows="4" required></textarea>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="productPrice" class="form-label">Price:</label>
+                        <input type="number" class="form-control" id="productPrice" name="productPrice" step="0.01" min="0" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="imageUpload" class="form-label">Upload an Image:</label>
+                        <input type="file" class="form-control" id="imageUpload" name="imageUpload" accept="image/*">
+                    </div>
+    
+                    <button type="submit" class="button button1">Submit</button>
+                </form>
+        </div>
+    </main>
+
+    <!-- Success Popup -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <div class="popup-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Success!</h3>
+            <p>Your product has been successfully submitted.</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms of Service</a></li>
+            </ul>
+            <p>&copy; 2025, Globelle</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        document.getElementById('productForm').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            document.getElementById('popupOverlay').style.display = 'block';
+            
+        });
+        
+        function closePopup() {
+            document.getElementById('popupOverlay').style.display = 'none';
+            
+            document.getElementById('productForm').reset();
+        }
+        
+        document.getElementById('popupOverlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePopup();
+            }
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePopup();
+            }
+        });
+    </script>
+
+</body>
+</html>

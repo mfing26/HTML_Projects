@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossier Super Bounce</title>
+    <link rel="stylesheet" href="css/style-product.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">Globelle.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3" href="">Skincare</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3" href="">Bath & Body</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3" href="">Haircare</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-3" href="">Accessories</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href=""><i class="fas fa-shopping-cart"></i> View My Cart</a>
+                    </li>
+                </ul>
+                <div class="ms-auto d-flex align-items-center">
+                    <form class="d-flex me-2">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                    <a href="" class="nav-link d-none d-lg-block">
+                        <i class="fas fa-shopping-cart" style="padding-left: 10px; padding-right: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <main class="mt-4 mb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-7 order-md-1">
+                    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="images/product-image1.jpg" class="d-block w-100" alt="standing bottles of glossier milky cleanser"></div>
+                            <div class="carousel-item"><img src="images/product-image2.jpg" class="d-block w-100" alt="close up bottles of glossier milky cleanser"></div>
+                            <div class="carousel-item"><img src="images/product-image3.jpg" class="d-block w-100" alt="lying down bottles of glossier milky cleanser"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-5 order-md-2">
+                    <div class="product-details">
+                        <h1 style="margin-top: 20px;">Glossier Super Bounce</h1>
+                        <p><b>Price:</b> $65.99</p>
+                        <p><b>Description:</b> Premium product with amazing benefits. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, perspiciatis vero id repellat rerum adipisci, inventore sapiente labore cupiditate illo harum odio in placeat culpa. Ipsam aliquid natus omnis placeat?</p>
+                        <button class="button button1">Add to Cart</button>
+                        <div class="reviews mt-4">
+                            <h2>Reviews</h2>
+                            <div class="accordion" id="reviewsAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Great product! Highly recommended.</button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#reviewsAccordion">
+                                        <div class="accordion-body"><b>Rating: 5/5</b><br>Reviewer Name: Jane Smith<br>Review Date: Jan 2025<br> Excellent quality! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consectetur commodi qui, dolores expedita neque.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button custom-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Good quality, but a bit pricey.</button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#reviewsAccordion">
+                                        <div class="accordion-body"><b>Rating: 4/5</b><br>Reviewer Name: Jane Smith<br>Review Date: Jan 2025<br> Excellent quality! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consectetur commodi qui, dolores expedita neque.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button custom-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">I love it!</button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#reviewsAccordion">
+                                        <div class="accordion-body"><b>Rating: 5/5</b><br>Reviewer Name: Jane Smith<br>Review Date: Jan 2025<br> Excellent quality! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consectetur commodi qui, dolores expedita neque.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="related-products mt-5 mb-5">
+                <h2>Related Products</h2>
+                <div class="row">
+                    <div class="row"> 
+                        <div class="col-md-6 col-lg-3 py-3">
+                        <article class="card">
+                           <img src="images/related-product-1.jpg" class="card-img-top" alt="image of glossier cleanser">            
+                           <div class="card-body">            
+                              <h5 class="card-title">Glossier Cleanser</h5>            
+                              <p class="card-text">$55.95</p>            
+                              <a href="" class="btn-related">Add to cart</a>       
+                        </article>        
+                     </div>  
+                     <div class="col-md-6 col-lg-3 py-3">
+                        <article class="card">
+                           <img src="images/related-product-2.jpg" class="card-img-top" alt="two bottles of tatcha rice wash with some leaves">            
+                           <div class="card-body">            
+                              <h5 class="card-title">Tatcha Rice Wash</h5>            
+                              <p class="card-text">$80.00</p>            
+                              <a href="" class="btn-related">Add to cart</a>       
+                        </article>        
+                     </div>  
+                     <div class="col-md-6 col-lg-3 d-none d-md-block py-3">
+                        <article class="card">
+                           <img src="images/related-product-3.jpg" class="card-img-top" alt="necessaire body cream">            
+                           <div class="card-body">            
+                              <h5 class="card-title">Necessaire Body Cream</h5>           
+                              <p class="card-text">$27.95</p>            
+                              <a href="" class="btn-related">Add to cart</a>       
+                        </article>        
+                     </div>  
+                     <div class="col-md-6 col-lg-3 d-none d-md-block py-3">
+                        <article class="card">
+                           <img src="images/related-product-4.jpg" class="card-img-top" alt="grown alchemist tube of hand cream">            
+                           <div class="card-body">            
+                              <h5 class="card-title">Grown Alchemist</h5>            
+                              <p class="card-text">$17.85</p>            
+                              <a href="" class="btn-related">Add to cart</a>  
+                            </div>    
+                        </article>
+                </div>
+            </div>
+        </main>
+
+<footer>
+    <div class="footer">
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+        </ul>
+        <p>&copy; 2025, Globelle</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

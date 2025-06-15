@@ -1,0 +1,136 @@
+.footer {
+    background-color: #FFF7F3;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-right:40px;
+    margin-top: auto;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+    padding-left: 40px; 
+}
+
+.footer ul li {
+    margin: 10px 0; 
+}
+
+.footer ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    text-align: right;
+    margin-top: auto;
+    margin-right: 15px;
+    color: #000;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .footer p {
+        margin-top: 0;
+    }
+}
+
+.form-with-margin {
+    margin-bottom: 30px;
+}
+
+.button {
+    border: none;
+    padding: 15px 32px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #FAD0C4;
+}
+
+.button:hover {
+    background-color: #E6B2BA;
+    border-color: #E6B2BA;
+    color: #000000;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.popup h3 {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.popup-icon {
+    font-size: 48px;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.popup button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.popup button:hover {
+    background-color: #0056b3;
+}
