@@ -1,0 +1,166 @@
+.text-container {
+  background-color: #e5e5e5;
+  padding: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.banner-image {
+  object-fit: cover;
+  height: 500px;
+}
+
+.banner-text {
+  background: rgba(0, 0, 0, 0.3);
+  max-width: 60%;
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: left;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .banner-text {
+    max-width: 70%;
+    padding-left: 1.5rem;
+  }
+}
+
+.navbar-collapse {
+  background-color: #f8f9fa;
+}
+
+.navbar-nav .nav-item {
+  background-color: #f8f9fa;
+}
+
+.navbar-nav .nav-link {
+  color: #333 ;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fca311 !important;
+  background-color: transparent !important;
+}
+
+.card-spotlight {
+  position: relative;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd; 
+  background-color: #ffffff; 
+  padding: 2rem;
+  overflow: hidden;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  --spotlight-color: rgba(255, 255, 255, 0.15); 
+}
+
+.card-spotlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.card-spotlight:hover::before,
+.card-spotlight:focus-within::before {
+  opacity: 0.4;
+}
+
+.btn-primary { 
+  background-color: #14213d;
+  color: #fff;
+  border: 0px; 
+  border-radius: 3px;
+}
+
+.btn-primary:hover {
+  background-color: #fca311;
+  color: #000000;
+}
+
+footer {
+  background-color: #e5e5e5;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-image {
+  flex: 1;
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-form-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.login-form {
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-form h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.login-form p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

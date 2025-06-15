@@ -1,0 +1,90 @@
+.filter-page {
+    font-family: Arial, sans-serif;
+  }
+  
+.banner-image {
+    object-fit: cover;
+    height: 500px;
+  }
+  
+.banner-text {
+    background: rgba(0, 0, 0, 0.3);
+    max-width: 60%;
+    padding: 1.5rem 1.5rem 1.5rem 3rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+  }
+  
+@media (max-width: 576px) {
+    .banner-text {
+      max-width: 70%;
+      padding-left: 1.5rem;
+    }
+  }
+  
+.filter-year {
+    padding: 1rem;
+  }
+  
+.filters {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+  }
+
+.filter-country {
+    min-width: 200px;
+  }
+  
+.filter-item label {
+    margin-bottom: 4px;
+    display: block;
+  }
+  
+.grid-wrapper {
+    max-height: 500px;
+    overflow: auto;
+  }
+  
+.cta-banner {
+    background-color: #A9A9A9;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+.cta-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+.cta-buttons a button {
+    background-color: #14213d;
+    color: #fff;
+    border: 0px; 
+    border-radius: 3px;
+    padding: 0.5rem 1.5rem;
+  }
+  
+.cta-buttons a button:hover {
+    background-color: #fca311;
+    color: #000000;
+  }
+  
+.chart-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
